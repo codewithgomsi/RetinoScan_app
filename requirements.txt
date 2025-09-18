@@ -9,3 +9,5 @@ opencv-python
 transformers
 torch
 streamlit-option-menu
+opencv-python-headless
+
