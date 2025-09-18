@@ -1,0 +1,114 @@
+/* --- Import Google Font: Poppins --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- General Body & Font Styling --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #e0e0e0;
+    background-color: #0e1117;
+}
+
+/* --- Main Content Area --- */
+.main .block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+/* --- Sidebar Styling (remains similar) --- */
+.st-emotion-cache-16txtl3 {
+    background-color: #0e1117; /* Match main background */
+    border-right: 1px solid #2c3e50;
+}
+
+/* --- streamlit-option-menu Navigation Bar Styling --- */
+.st-emotion-cache-16txtl3 nav {
+    padding: 1rem 0;
+}
+
+.st-emotion-cache-16txtl3 .nav-item {
+    transition: all 0.2s ease-in-out;
+    border-radius: 0.3rem;
+    margin: 0.2rem 0.5rem;
+}
+
+.st-emotion-cache-16txtl3 .nav-link {
+    color: #b0bec5; /* Muted color for inactive items */
+    font-weight: 400;
+}
+
+.st-emotion-cache-16txtl3 .nav-link:hover {
+    background-color: #2c3e50;
+    color: #e0e0e0;
+}
+
+.st-emotion-cache-16txtl3 .nav-link-selected {
+    background-color: #007bff; /* Bright blue for selected item */
+    color: white;
+    font-weight: 600;
+}
+
+.st-emotion-cache-16txtl3 .nav-link-selected:hover {
+    background-color: #0056b3;
+}
+
+/* --- "Card" effect for main content containers --- */
+/* This targets the containers where you'd put your main content */
+div[data-testid="stVerticalBlock"] > [data-testid="stHorizontalBlock"] > div[data-testid="stVerticalBlock"] {
+    background-color: #1a1f2e;
+    border: 1px solid #2c3e50;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+div[data-testid="stVerticalBlock"] > [data-testid="stHorizontalBlock"] > div[data-testid="stVerticalBlock"]:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+}
+
+
+/* --- Header & Title Styling --- */
+h1, h2 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+h3 {
+    color: #e0e0e0;
+    font-weight: 600;
+}
+
+/* --- Button & Widget Styling --- */
+.stButton>button {
+    border: 1px solid #007bff;
+    background-color: transparent;
+    color: #007bff;
+    padding: 0.6em 1.2em;
+    border-radius: 0.5em;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.stButton>button:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5);
+}
+
+.stFileUploader {
+    border: 2px dashed #2c3e50;
+    background-color: rgba(44, 62, 80, 0.2);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* --- Footer Styling --- */
+footer {
+    text-align: center;
+    padding: 1rem;
+    color: #8892b0;
+    font-size: 0.9rem;
+}
